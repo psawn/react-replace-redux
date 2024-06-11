@@ -13,7 +13,7 @@ const Products = (props) => {
           id={prod.id}
           title={prod.title}
           description={prod.description}
-          isFav={prod.isFavorite}
+          isFavorite={prod.isFavorite}
         />
       ))}
     </ul>
