@@ -29,7 +29,10 @@ const initialState = {
   ],
 };
 
-const productReducer = (state = initialState, action) => {
+const productReducer = (
+  state = initialState,
+  action: { type: string; productId: string }
+) => {
   switch (action.type) {
     case TOGGLE_FAV: {
       const prodIndex = state.products.findIndex(
